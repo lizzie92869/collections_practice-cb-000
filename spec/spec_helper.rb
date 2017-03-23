@@ -7,5 +7,14 @@ require_relative '../collections_practice'
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
-  # config here
+
+
+  # Question 4
+  describe 'swap_elements_from_to' do
+    it 'swap the elements from index and destination index of an array' do
+      expect(swap_elements_from_to(["blake", "ashley", "scott"], 0, 1)).to eq(["ashley", "blake", "scott"])
+    end
+  end
+
+
 end
